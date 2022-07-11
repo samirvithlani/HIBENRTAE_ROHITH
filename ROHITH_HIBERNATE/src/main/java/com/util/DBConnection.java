@@ -7,7 +7,8 @@ public class DBConnection {
 
 	public static Session getConnection() {
 
-		return new Configuration().configure().buildSessionFactory().openSession();
+		return new Configuration().configure
+				().buildSessionFactory().openSession();
 	}
 
 	public static void main(String[] args) {

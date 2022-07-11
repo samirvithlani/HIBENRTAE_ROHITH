@@ -1,0 +1,13 @@
+package com.controller;
+
+public class EmployeeController {
+
+	public void employee()
+	{
+		
+		//need connection
+	}
+	public static void main(String[] args) {
+
+	}
+}

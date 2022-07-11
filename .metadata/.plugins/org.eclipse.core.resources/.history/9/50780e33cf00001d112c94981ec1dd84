@@ -1,0 +1,35 @@
+package com.controller;
+
+import org.hibernate.Session;
+
+import com.bean.EmployeeBean;
+import com.util.DBConnection;
+
+public class EmployeeController {
+
+	public void addEmployee() {
+
+		// need connection
+		Session session = DBConnection.getConnection();
+		if (session != null) {
+			session.beginTransaction();
+			EmployeeBean employeeBean = new EmployeeBean();
+			employeeBean.seteName("raj");
+			employeeBean.seteEmail("raj@gmail.com");
+			employeeBean.setAge(20);
+
+			session.save(employeeBean);
+		
+			System.out.println("employee data saved...");
+			session.close();
+
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		EmployeeController employeeController = new EmployeeController();
+		employeeController.addEmployee();
+
+	}
+}

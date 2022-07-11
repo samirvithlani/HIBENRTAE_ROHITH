@@ -1,0 +1,12 @@
+package com.util.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee")
+public class EmployeeBean {
+
+	
+	
+}

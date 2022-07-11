@@ -1,0 +1,40 @@
+package com.bean;
+
+import javax.annotation.Generated;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee")
+public class EmployeeBean {
+
+	@Id
+	@GeneratedValue
+	private int eId;
+
+	@Column(name = "eName")
+	private String eName;
+
+	@Column(name = "eEmail", nullable = false)
+	private String eEmail;
+
+	public int geteId() {
+		return eId;
+	}
+
+	public void seteId(int eId) {
+		this.eId = eId;
+	}
+
+	public String geteName() {
+		return eName;
+	}
+
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+
+}

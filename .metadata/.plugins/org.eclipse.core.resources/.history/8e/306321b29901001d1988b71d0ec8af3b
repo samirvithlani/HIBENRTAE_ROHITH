@@ -1,0 +1,10 @@
+package com.bean;
+
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "account")
+public class AccountBean {
+
+	
+}

@@ -1,0 +1,16 @@
+package com.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "account")
+public class AccountBean {
+
+	@Id
+	@GeneratedValue
+	private int aId;
+	
+}

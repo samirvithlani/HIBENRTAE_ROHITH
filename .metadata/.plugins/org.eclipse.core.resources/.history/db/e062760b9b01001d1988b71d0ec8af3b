@@ -1,0 +1,28 @@
+package com.controller;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.bean.AccountBean;
+import com.util.DBConnection;
+
+public class Account_UserController {
+
+	public void addData() {
+
+		Session session = DBConnection.getConnection();
+		if (session != null) {
+
+			Transaction tr = session.beginTransaction();
+			AccountBean accountBean = new AccountBean();
+			accountBean.setaName("netflix");
+			session.save(accountBean);
+			tr.commit();
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

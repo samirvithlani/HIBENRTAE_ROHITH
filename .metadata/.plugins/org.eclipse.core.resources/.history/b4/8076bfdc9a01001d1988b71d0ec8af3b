@@ -1,0 +1,13 @@
+package com.controller;
+
+public class Account_UserController {
+
+	public void addData() {
+
+		
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

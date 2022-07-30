@@ -1,5 +1,6 @@
 package com.bean;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,48 +12,45 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class UserBean {
 
-		@Id
-		@GeneratedValue
-		private int uId;
-		private String uName;
-		private int uAge;
-		
-		@OneToOne
-		private AccountBean accountBean;
+	@Id
+	@GeneratedValue
+	private int uId;
+	private String uName;
+	private int uAge;
 
-		public int getuId() {
-			return uId;
-		}
+	@OneToOne(cascade = CascadeType.ALL)
+	private AccountBean accountBean;
 
-		public void setuId(int uId) {
-			this.uId = uId;
-		}
+	public int getuId() {
+		return uId;
+	}
 
-		public String getuName() {
-			return uName;
-		}
+	public void setuId(int uId) {
+		this.uId = uId;
+	}
 
-		public void setuName(String uName) {
-			this.uName = uName;
-		}
+	public String getuName() {
+		return uName;
+	}
 
-		public int getuAge() {
-			return uAge;
-		}
+	public void setuName(String uName) {
+		this.uName = uName;
+	}
 
-		public void setuAge(int uAge) {
-			this.uAge = uAge;
-		}
+	public int getuAge() {
+		return uAge;
+	}
 
-		public AccountBean getAccountBean() {
-			return accountBean;
-		}
+	public void setuAge(int uAge) {
+		this.uAge = uAge;
+	}
 
-		public void setAccountBean(AccountBean accountBean) {
-			this.accountBean = accountBean;
-		}
-		
-		
-		
-		
+	public AccountBean getAccountBean() {
+		return accountBean;
+	}
+
+	public void setAccountBean(AccountBean accountBean) {
+		this.accountBean = accountBean;
+	}
+
 }

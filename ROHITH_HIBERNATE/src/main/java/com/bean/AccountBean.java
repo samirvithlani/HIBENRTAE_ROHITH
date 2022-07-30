@@ -9,6 +9,10 @@ import javax.persistence.Table;
 @Table(name = "account")
 public class AccountBean {
 
+	public AccountBean() {
+		System.out.println("Account Bean");
+	}
+	
 	@Id
 	@GeneratedValue
 	private int aId;

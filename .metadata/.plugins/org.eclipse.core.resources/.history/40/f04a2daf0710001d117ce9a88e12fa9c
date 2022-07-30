@@ -1,0 +1,10 @@
+package com.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "city")
+public class Country {
+
+}

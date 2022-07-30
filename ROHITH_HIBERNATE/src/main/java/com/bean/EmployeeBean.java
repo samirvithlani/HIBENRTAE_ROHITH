@@ -11,6 +11,10 @@ import javax.persistence.Table;
 @Table(name = "employee")
 public class EmployeeBean {
 
+	public EmployeeBean() {
+		System.out.println("employee bean");
+	}
+
 	@Id
 	@GeneratedValue
 	private int eId;
@@ -20,9 +24,8 @@ public class EmployeeBean {
 
 	@Column(name = "eEmail", nullable = true)
 	private String eEmail;
-	
+
 	private int age;
-	
 
 	public String geteEmail() {
 		return eEmail;

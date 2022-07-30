@@ -1,0 +1,45 @@
+package com.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.bean.City;
+import com.bean.Country;
+import com.util.DBConnection;
+
+public class Country_cityController {
+
+	public void Add_city_Coutry() {
+
+		Session session = DBConnection.getConnection();
+		if (session != null) {
+
+			Transaction tr = session.beginTransaction();
+			Country c1 = new Country();
+			c1.setCountryName("India");
+
+			City ci1 = new City();
+			ci1.setCityName("Ahmedabad");
+			City ci2 = new City();
+			ci2.setCityName("Mumbai");
+			City ci3 = new City();
+			ci3.setCityName("Pune");
+
+			List<City> cities1 = new ArrayList<City>();
+			cities1.add(ci1);
+			cities1.add(ci2);
+			cities1.add(ci3);
+
+			Country c2 = new Country();
+			c2.setCountryName("Austrelia");
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

@@ -16,8 +16,13 @@
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
 		<mapping class="com.bean.EmployeeBean" />
-		<mapping class="com.bean.UserBean"/>
-		<mapping class="com.bean.AccountBean"/>
+		<mapping class="com.bean.UserBean" />
+		<mapping class="com.bean.AccountBean" />
+		<mapping class="com.bean.Abc" />
+		<mapping class="com.bean.Courses" />
+		<mapping class="com.bean.Student" />
+		<mapping class="com.bean.Country" />
+		<mapping class="com.bean.City" />
 
 	</session-factory>
 

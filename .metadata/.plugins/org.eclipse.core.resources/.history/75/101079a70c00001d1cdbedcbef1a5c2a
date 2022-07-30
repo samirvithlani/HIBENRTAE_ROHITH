@@ -1,8 +1,0 @@
-package com.util.bean;
-
-import javax.persistence.Entity;
-
-@Entity
-public class EmployeeBean {
-
-}

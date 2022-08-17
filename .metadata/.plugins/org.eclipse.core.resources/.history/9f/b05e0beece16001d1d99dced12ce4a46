@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/rohith_hibernate</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<property name="hibenrate.show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping class="com.bean.EmployeeBean" />
+		<mapping class="com.bean.UserBean" />
+		<mapping class="com.bean.AccountBean" />
+		<mapping class="com.bean.Abc" />
+		<mapping class="com.bean.Courses" />
+		<mapping class="com.bean.Student" />
+		<mapping class="com.bean.Country" />
+		<mapping class="com.bean.City" />
+		<mapping class="com.bean.hqlBeans.NetflixBean" />
+
+	</session-factory>
+
+</hibernate-configuration>	

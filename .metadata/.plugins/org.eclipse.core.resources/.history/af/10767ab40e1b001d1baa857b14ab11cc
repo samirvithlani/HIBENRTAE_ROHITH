@@ -1,0 +1,19 @@
+package java8;
+
+interface Print {
+
+	public int printing(int no);
+}
+
+public class LambdaDemo2 {
+
+	public static void main(String[] args) {
+
+		Print p = (x) -> {
+
+			return x * x;
+		};
+		p.printing(15);
+
+	}
+}

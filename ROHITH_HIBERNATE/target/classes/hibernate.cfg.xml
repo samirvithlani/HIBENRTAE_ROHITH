@@ -23,6 +23,10 @@
 		<mapping class="com.bean.Student" />
 		<mapping class="com.bean.Country" />
 		<mapping class="com.bean.City" />
+		<mapping class="com.bean.HqlBeans.NetflixBean" />
+		<mapping class="com.bean.HqlBeans.Company" />
+		<mapping class="com.bean.HqlBeans.Manager" />
+		<mapping class="com.bean.HqlBeans.Customer" />
 
 	</session-factory>
 

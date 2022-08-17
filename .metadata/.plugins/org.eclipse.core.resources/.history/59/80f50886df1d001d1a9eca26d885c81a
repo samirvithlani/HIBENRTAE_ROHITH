@@ -1,0 +1,28 @@
+package java8.stream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ForEachDemo {
+
+	public static void main(String[] args) {
+
+		List<String> names = new ArrayList<String>();
+		names.add("raj");
+		names.add("parth");
+		names.add("neha");
+		names.add("jaya");
+		names.add("amit");
+		names.add("ram");
+
+		// 1.7
+
+		for (String s : names) {
+			System.out.println(s);
+		}
+		// 1.8
+
+		names.stream().forEach(x -> System.out.println(x));
+
+	}
+}

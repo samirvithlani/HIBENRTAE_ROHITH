@@ -1,0 +1,8 @@
+package java8.stream;
+
+public class FindFirstDemo {
+
+	public static void main(String[] args) {
+
+	}
+}

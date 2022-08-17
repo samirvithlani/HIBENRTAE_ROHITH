@@ -1,0 +1,10 @@
+package java8.stream;
+
+public class ForEachDemo {
+
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

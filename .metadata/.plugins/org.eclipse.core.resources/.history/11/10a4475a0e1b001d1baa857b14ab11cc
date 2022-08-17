@@ -1,0 +1,9 @@
+package java8;
+
+interface Print() {
+	
+	
+}
+public class LambdaDemo2 {
+
+}

@@ -1,0 +1,18 @@
+package com.controller.hqlContrrollers;
+
+import com.util.DBConnection;
+
+public class CustomerController {
+
+	public void addData() {
+		
+		Session session = DBConnection.getConnection();
+		if(session!=null) {
+			
+			
+		}
+	}
+	public static void main(String[] args) {
+		
+	}
+}

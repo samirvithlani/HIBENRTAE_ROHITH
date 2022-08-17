@@ -1,0 +1,33 @@
+package java8.stream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employee {
+
+	int id;
+	String name;
+	double sal;
+
+	public Employee(int id, String name, double sal) {
+
+		this.id = id;
+		this.name = name;
+		this.sal = sal;
+	}
+
+}
+
+public class ListToMap {
+
+	public static void main(String[] args) {
+		
+		List<Employee> list = new ArrayList<Employee>();
+		list.add(new Employee(101, "a", 12345.65));
+		list.add(new Employee(102, "b", 2345.65));
+		list.add(new Employee(103, "c", 1245.65));
+		list.add(new Employee(104, "d", 345.65));
+		
+
+	}
+}

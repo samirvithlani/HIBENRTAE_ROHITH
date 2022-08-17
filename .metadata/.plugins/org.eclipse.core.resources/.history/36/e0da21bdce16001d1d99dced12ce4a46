@@ -1,0 +1,11 @@
+package com.bean.HqlBeans;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "netflix")
+public class NetflixBean {
+
+	private int id;
+}

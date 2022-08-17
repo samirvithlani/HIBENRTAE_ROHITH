@@ -1,0 +1,15 @@
+package java8;
+
+interface Call {
+	public void calling();
+}
+
+public class BeforeLambda implements Call{
+
+	@Override
+	public void calling() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

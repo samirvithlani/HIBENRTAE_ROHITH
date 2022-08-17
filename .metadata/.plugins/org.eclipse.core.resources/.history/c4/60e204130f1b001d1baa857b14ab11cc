@@ -1,0 +1,19 @@
+package java8;
+
+interface Changes {
+
+	public String Data(String name, String lastname);
+}
+
+public class LamdaDemo3 implements Changes {
+
+	@Override
+	public String Data(String name, String lastname) {
+		// TODO Auto-generated method stub
+		return name.concat(lastname);
+	}
+	
+	LamdaDemo3 l = new LamdaDemo3();
+
+
+}

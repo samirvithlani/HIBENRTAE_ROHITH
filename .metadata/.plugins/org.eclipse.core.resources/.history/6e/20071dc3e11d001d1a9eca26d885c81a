@@ -1,0 +1,9 @@
+package java8.stream;
+
+public class ListToMap {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

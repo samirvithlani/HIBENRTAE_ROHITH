@@ -1,0 +1,5 @@
+package com.controller.hqlContrrollers;
+
+public class CustomerController {
+
+}

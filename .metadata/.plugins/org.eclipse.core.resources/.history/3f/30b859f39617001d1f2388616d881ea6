@@ -1,0 +1,8 @@
+package com.controller.hqlContrrollers;
+
+public class CustomerController {
+
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,26 @@
+package com.controller.hqlContrrollers;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.bean.HqlBeans.Customer;
+import com.util.DBConnection;
+
+public class CustomerController {
+
+	public void addData() {
+		
+		Session session = DBConnection.getConnection();
+		if(session!=null) {
+			
+			Transaction tr = session.beginTransaction();
+			Customer c1 = new Customer();
+			c1.setName("Ajay");
+			
+			
+		}
+	}
+	public static void main(String[] args) {
+		
+	}
+}

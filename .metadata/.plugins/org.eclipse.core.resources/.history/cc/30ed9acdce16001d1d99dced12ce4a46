@@ -1,0 +1,19 @@
+package com.bean.HqlBeans;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "netflix")
+public class NetflixBean {
+
+	@Id
+	@GeneratedValue
+	private int id;
+	
+	private String userName;
+	private int userAge;
+	
+}

@@ -1,0 +1,35 @@
+package java8.stream;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class FilterSteam {
+
+	public static void main(String[] args) {
+
+		List<String> names = new ArrayList<String>();
+		names.add("raj");
+		names.add("parth");
+		names.add("neha");
+		names.add("jaya");
+		names.add("amit");
+		names.add("ajay");
+		names.add("akansha");
+		names.add("ram");
+
+		// it is just print the filterd data ....
+		// if you want to store filterd data into new list....
+		// List<String> filterdData =
+		// names.stream().filter(x->x.startsWith("a")).collect(Collectors.toList());
+		// filterdData.stream().forEach(x->System.out.println(x));
+		// String[] filterdData =
+		// names.stream().filter(x->x.startsWith("a")).toArray(String[]::new);
+		Set<String> set = names.stream().filter(x -> x.startsWith("a")).collect(Collectors.toSet());
+
+		Map<Integer, String> map = names.stream().collect(Collectors.toMap(names, names));
+
+	}
+}

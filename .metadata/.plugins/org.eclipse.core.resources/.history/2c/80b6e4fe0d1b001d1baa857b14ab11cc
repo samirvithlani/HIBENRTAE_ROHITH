@@ -1,0 +1,9 @@
+package java8;
+
+interface Call {
+	public void calling();
+}
+
+public class BeforeLambda {
+
+}

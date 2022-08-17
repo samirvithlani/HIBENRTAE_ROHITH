@@ -1,0 +1,17 @@
+package com.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeList {
+
+	List<String> employees = new ArrayList<String>();
+	public void getEmployees() {
+		
+		
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+}

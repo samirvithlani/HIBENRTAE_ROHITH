@@ -1,0 +1,39 @@
+package com.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeList {
+
+	List<String> employees = new ArrayList<String>();
+
+	public void addEMployees() {
+
+		employees.add("jay");
+		employees.add("raj");
+		employees.add("amit");
+		employees.add("neha");
+		employees.add("parth");
+		employees.add("manish");
+		employees.add("zara");
+	}
+	
+	public void getEmployees() {
+		
+		
+	}
+
+	public void getEmployees() {
+
+		for (String s : employees) {
+			System.out.println(s);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		EmployeeList  employeeList = new EmployeeList();
+		employeeList.addEMployees();
+		employeeList.getEmployees();
+	}
+}
